@@ -1,0 +1,33 @@
+{
+    "description": "Access to exhentai.org",
+    "manifest_version": 2,
+    "name": "Exhentai Passport",
+    "version": "0.0.1",
+    "homepage_url": "https://github.com/harytfw/GlitterDrag",
+    "author": "harytfw",
+    "permissions": [
+        "*://exhentai.org/",
+        "*://exhentai.org/",
+        "cookies"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "content_scripts": [{
+        "matches": [
+            "https://exhentai.org/",
+            "https://forums.e-hentai.org/"
+        ],
+        "js": [
+            "content-exhentai.js"
+        ]
+    }],
+    "applications": {
+        "gecko": {
+            "id": "exhentaipassport@harytfw",
+            "strict_min_version": "48.0"
+        }
+    }
+}
