@@ -1,7 +1,12 @@
 # Exhentai Passport
 
+This is a webextension for firefox browser.
+
 Say goodbye to sad panda.
 
+## Requirement:
+  firefox 48+
+  
 ## Steps:
 
 * Install this addon.
