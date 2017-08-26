@@ -7,7 +7,7 @@
     "author": "harytfw",
     "permissions": [
         "*://exhentai.org/",
-        "*://exhentai.org/",
+        "*://forums.e-hentai.org/",
         "cookies"
     ],
     "background": {
@@ -17,8 +17,7 @@
     },
     "content_scripts": [{
         "matches": [
-            "https://exhentai.org/",
-            "https://forums.e-hentai.org/"
+            "*://exhentai.org/"
         ],
         "js": [
             "content-exhentai.js"
