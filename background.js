@@ -18,14 +18,10 @@ async function modifyCookie(message, sender, sendResponse) {
         else {
             pass_hash.url = server.ex;
             pass_hash.domain = ".exhentai.org";
-            pass_hash.hostOnly = false;
-            pass_hash.session = false;
             await browser.cookies.set(pass_hash);
 
             member_id.url = server.ex;
             member_id.domain = ".exhentai.org";
-            member_id.hostOnly = false;
-            member_id.session = false;
             await browser.cookies.set(member_id);
 
             return { success: true, msg: "success" }
