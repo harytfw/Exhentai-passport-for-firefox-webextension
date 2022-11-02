@@ -4,6 +4,10 @@ This is a webextension for firefox browser.
 
 Help you get into ExHentai.
 
+## Installation
+
+Please install extension at AMO: https://addons.mozilla.org/zh-CN/firefox/addon/exhentai-passport
+
 ## Requirement:
   firefox 48+
   
