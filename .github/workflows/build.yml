@@ -2,19 +2,20 @@ name: Build Signed
 
 on:
   push:
-    branches: [ release ]
+    branches: [release]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     environment: amo_sign
+    env: # Or as an environment variable
+      WEB_EXT_API_SECRET: ${{ secrets.WEB_EXT_API_SECRET }}
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: "16.x"
       - run: npm install web-ext
       - run: npx web-ext sign --channel unlisted --api-key "${{ vars.WEB_EXT_API_KEY }}"
       - name: Archive production artifacts
@@ -23,4 +24,3 @@ jobs:
           name: web-ext-artifacts
           path: |
             web-ext-artifacts
-            
