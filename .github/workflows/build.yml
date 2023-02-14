@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '16.x'
       - run: npm install web-ext
-      - run: npx web-ext sign --channel unlisted --api-key "${{ vars.WEB_EXT_API_KEY }}" --api-api-secret "${{ vars.WEB_EXT_API_SECRET }}"
+      - run: npx web-ext sign --channel unlisted --api-key "${{ vars.WEB_EXT_API_KEY }}"
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
         with:
