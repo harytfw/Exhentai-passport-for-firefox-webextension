@@ -1,8 +1,8 @@
 name: Build Signed
 
 on:
-  # push:
-  #   branches: [ main ]
+  push:
+    branches: [ release ]
 
 jobs:
   build:
