@@ -2,8 +2,8 @@
     "description": "Access to exhentai.org",
     "manifest_version": 2,
     "name": "Exhentai Passport",
-    "version": "0.0.6",
-    "homepage_url": "https://github.com/harytfw/Exhentai-passport-for-firefox-webextension",
+    "version": "0.0.9",
+    "homepage_url": "https://github.com/harytfw/GlitterDrag",
     "author": "harytfw",
     "permissions": [
         "*://exhentai.org/",

@@ -1,0 +1,26 @@
+name: Build Signed
+
+on:
+  # push:
+  #   branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    environment: amo_sign
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+      - run: npm install web-ext
+      - run: web-ext sign --channel unlisted
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: web-ext-artifacts
+          path: |
+            web-ext-artifacts
+            
