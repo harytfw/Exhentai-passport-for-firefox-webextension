@@ -3,7 +3,7 @@
     "manifest_version": 2,
     "name": "Exhentai Passport",
     "version": "0.0.9",
-    "homepage_url": "https://github.com/harytfw/GlitterDrag",
+    "homepage_url": "https://github.com/harytfw/Exhentai-passport-for-firefox-webextension",
     "author": "harytfw",
     "permissions": [
         "*://exhentai.org/",
